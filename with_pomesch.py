@@ -1,12 +1,12 @@
 file_name = 'pomesch.txt'
 with open(file_name, mode='r', encoding='utf8') as file:
     for line in file:
-        print(line.upper().strip())
+        stroka_s_to4koj = line[:2] + '.' + line[2:]
+        stroka_s_to4koj_UP = stroka_s_to4koj.upper().strip()
+        print(stroka_s_to4koj_UP)
 
 
-# как после второго символа поставить во всех элементах точку
-# было 3б8.1     стало 3Б.8.1
-#      2б1             2Б.1
+
 
 
 
